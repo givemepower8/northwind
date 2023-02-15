@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <Folder Include="Identity\" />
+    <Folder Include="Constants\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
 
 </Project>
