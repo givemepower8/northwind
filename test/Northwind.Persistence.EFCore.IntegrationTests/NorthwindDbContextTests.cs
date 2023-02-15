@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Northwind.Domain.Entities;
 
-namespace Northwind.Persistence.EFCore.IntergrationTests
+namespace Northwind.Persistence.EFCore.IntegrationTests
 {
   public class NorthwindDbContextTests
   {
