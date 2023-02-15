@@ -31,6 +31,7 @@ Implement the services, features needed to make the application work.
 
 Implement the CRUD operations.
 
+It can be EFCore, Dapper, ADO.NET, as long as they implement the contract.
 
 ## Unit tests
 
