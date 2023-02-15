@@ -34,6 +34,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Persistence.EFCore.IntergrationTests", "test\Northwind.Persistence.EFCore.IntergrationTests\Northwind.Persistence.EFCore.IntergrationTests.csproj", "{0DE9913C-177E-479A-9EE0-BEA1DF446DC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,10 @@ Global
 		{EBDAF455-5AE3-4EAF-8742-C0C75CD07D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBDAF455-5AE3-4EAF-8742-C0C75CD07D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBDAF455-5AE3-4EAF-8742-C0C75CD07D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DE9913C-177E-479A-9EE0-BEA1DF446DC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE9913C-177E-479A-9EE0-BEA1DF446DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE9913C-177E-479A-9EE0-BEA1DF446DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE9913C-177E-479A-9EE0-BEA1DF446DC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{7931FA7E-743A-45A4-A172-877CF3BECAD6} = {72931F8D-D43A-42FC-BDFE-75D0BCEEC52C}
 		{C6033E5F-C195-488B-80BC-3519BECFC8E4} = {3A323F05-8D1A-49E7-B088-4E82CD15C68B}
 		{EBDAF455-5AE3-4EAF-8742-C0C75CD07D62} = {4D29E090-8313-4F12-B370-70823F1D179D}
+		{0DE9913C-177E-479A-9EE0-BEA1DF446DC8} = {72931F8D-D43A-42FC-BDFE-75D0BCEEC52C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E2BA1DD-698F-411E-B337-BC58E295AC4A}
