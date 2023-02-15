@@ -34,7 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Persistence.EFCore.IntegrationTests", "test\Northwind.Persistence.EFCore.IntegrationTests\Northwind.Persistence.EFCore.IntegrationTests.csproj", "{0DE9913C-177E-479A-9EE0-BEA1DF446DC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Persistence.EFCore.IntegrationTests", "test\Northwind.Persistence.EFCore.IntegrationTests\Northwind.Persistence.EFCore.IntegrationTests.csproj", "{0DE9913C-177E-479A-9EE0-BEA1DF446DC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
