@@ -1,12 +1,7 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Northwind.API;
-using Northwind.Application.Contracts.Persistence;
 using Northwind.Application.Contracts.Services;
-using Northwind.Application.Services;
-using Northwind.Domain.Entities;
 using Northwind.Persistence.EFCore;
-using Northwind.Persistence.EFCore.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,15 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddPersistenceServices(builder.Configuration);
+
 builder.Services.AddDbContext<NorthwindDbContext>(options =>
 	options.UseSqlServer(builder.Configuration.GetConnectionString("NorthwindConnectionString")));
 
-builder.Services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
-
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-
-builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddApplicationCoreServices();
 
 var app = builder.Build();
 
@@ -55,7 +46,7 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
-app.MapGet("/products", async ([FromServices] IProductService productService) =>
+app.MapGet("/products", async (IProductService productService) =>
 	Results.Ok(await productService.GetProducts()))
 .WithName("GetProducts")
 .WithOpenApi(); ;

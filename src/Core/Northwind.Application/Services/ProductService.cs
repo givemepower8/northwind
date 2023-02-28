@@ -16,4 +16,9 @@ public class ProductService : IProductService
 	{
 		return _productRepository.ListAllAsync();
 	}
+
+	public Task<IReadOnlyList<Product>> GetProductsByCategory(int categoryId)
+	{
+		return _productRepository.GetProductsByCategory(categoryId);
+	}
 }
