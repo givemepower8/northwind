@@ -14,6 +14,7 @@ namespace Northwind.Persistence.EFCore
     {
     }
 
+    public virtual DbSet<Product> Products { get; set; } = null!;
     public virtual DbSet<Category> Categories { get; set; } = null!;
     public virtual DbSet<Customer> Customers { get; set; } = null!;
     public virtual DbSet<CustomerDemographic> CustomerDemographics { get; set; } = null!;
